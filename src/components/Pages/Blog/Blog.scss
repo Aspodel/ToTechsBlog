@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+//font-family: 'Nunito', sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+// font-family: 'Lato', sans-serif;
+
+// @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+//font-family: 'Quicksand', sans-serif;
+
+.blog-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  // align-items: center;
+  //   justify-content: center;
+  flex-direction: column;
+  padding: 0 200px;
+  box-sizing: border-box;
+
+  .header-detail {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 45px 0;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      img {
+        height: 55px;
+        width: 55px;
+        margin-right: 5px;
+      }
+
+      .company-name {
+        display: flex;
+        align-items: flex-end;
+
+        span {
+          font-size: 2.5em;
+          font-weight: 600;
+          font-family: "Lato", sans-serif;
+
+          &:nth-child(2) {
+            color: rgb(255, 86, 86);
+            font-size: 2.7em;
+          }
+        }
+      }
+    }
+
+    .navigation {
+      margin-left: 100px;
+      font-size: 1.3em;
+      font-weight: 700;
+
+      span {
+        font-family: "Nunito", sans-serif;
+        margin-right: 50px;
+        color: #b8b8b8;
+      }
+    }
+  }
+
+  .main-content {
+    box-sizing: border-box;
+    padding: 40px 0;
+
+    .content-top {
+      display: flex;
+
+      img {
+        height: 30px;
+        width: 30px;
+      }
+
+      .left {
+        margin-right: 24px;
+        width: 60%;
+
+        .big-blog {
+          img {
+            height: 150px;
+            width: 450px;
+          }
+
+          div {
+            margin-top: 24px;
+            font-family: "Nunito", sans-serif;
+            // font-size: 0.95em;
+          }
+
+          .title {
+            font-weight: 700;
+            font-size: 1.5em;
+          }
+
+          .sub {
+            color: #767779;
+          }
+
+          .author {
+            font-weight: 700;
+          }
+
+          .time {
+            color: #afafaf;
+            font-size: 0.95em;
+          }
+        }
+      }
+
+      .right {
+        width: 40%;
+
+        .blog {
+          display: flex;
+          margin-bottom: 30px;
+
+          img {
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: center;
+          }
+
+          .details {
+            margin-right: 24px;
+
+            div {
+              margin-bottom: 4px;
+              font-family: "Nunito", sans-serif;
+              // font-family: 'Quicksand', sans-serif;
+              // font-size: 0.95em;
+            }
+
+            .title {
+              font-weight: 700;
+              font-size: 1.2em;
+            }
+
+            .author {
+              font-weight: 700;
+              margin-bottom: 0px;
+            }
+
+            .time {
+              color: #afafaf;
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

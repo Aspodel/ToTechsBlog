@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
+//font-family: 'Baloo Tammudu 2', cursive;
+
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web&display=swap");
+// font-family: 'Istok Web', sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+// font-family: 'Lato', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+//font-family: 'Poppins', sans-serif;
+
+.intro-page {
+  height: 100vh;
+  width: 100vw;
+  background: #fefefe;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../image/test.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .header-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 60px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      img {
+        height: 55px;
+        width: 55px;
+        margin-right: 5px;
+      }
+
+      .company-name {
+        display: flex;
+        align-items: flex-end;
+
+        span {
+          font-size: 2.5em;
+          font-weight: 600;
+          font-family: "Lato", sans-serif;
+
+          &:nth-child(2) {
+            color: rgb(255, 86, 86);
+            font-size: 2.7em;
+          }
+        }
+      }
+    }
+
+    .navigation {
+      // font-weight: 500;
+      font-size: 1.5em;
+      color: #aeaeae;
+      letter-spacing: 1px;
+
+      span {
+        padding: 0 40px;
+        font-weight: 700;
+        font-family: "Baloo Tammudu 2", cursive;
+
+        &:nth-child(1) {
+          color: #000;
+        }
+      }
+    }
+
+    button {
+      padding: 16px 60px;
+      box-sizing: border-box;
+      border-radius: 14px;
+      color: #fff;
+      // margin-top: 30px;
+      background: #333232;
+      font-size: 1.1em;
+      font-weight: 500;
+      outline: none;
+      border: none;
+    }
+  }
+
+  .main-content {
+    display: flex;
+    // align-items: center;
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    // padding: 0 180px;
+
+    .content-left {
+      width: 35%;
+      padding-left: 230px;
+      box-sizing: border-box;
+
+      .title {
+        margin-top: 25%;
+        font-size: 5.5em;
+        font-weight: 700;
+        letter-spacing: 3px;
+        // font-family: "Istok Web", sans-serif;
+        font-family: 'Poppins', sans-serif;
+        line-height: 110px;
+      }
+
+      .sub {
+        color: #969696;
+        font-size: 1.5em;
+        margin: 40px 0;
+        // font-family: "Baloo Tammudu 2", cursive;
+      }
+
+      button {
+        background: #6a7bff;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.2em;
+        outline: none;
+        border: none;
+        padding: 20px 40px;
+        border-radius: 15px;
+        letter-spacing: 1px;
+      }
+    }
+
+    img {
+      height: 500px;
+      width: 1000px;
+    }
+
+    .content-right {
+      width: 100%;
+      text-align: right;
+
+      img {
+        height: 800px;
+        width: 1200px;
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+// font-family: 'Lato', sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web&display=swap");
+// font-family: 'Istok Web', sans-serif;
+
+.login-page {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../../image/FullHD.svg);
+  background-position: center;
+  background-size: cover;
+  padding: 0 250px;
+  box-sizing: border-box;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .box {
+    box-sizing: border-box;
+    padding: 60px 65px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    width: 500px;
+    height: 750px;
+    border-radius: 20px;
+    background-color: rgba($color: #fff, $alpha: 0.65);
+    box-shadow: -20px 30px 30px rgba($color: rgb(155, 148, 148), $alpha: 0.2);
+
+    .header-detail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        img {
+          height: 55px;
+          width: 55px;
+          margin-right: 5px;
+        }
+
+        .company-name {
+          display: flex;
+          align-items: flex-end;
+
+          span {
+            font-size: 2.5em;
+            font-weight: 600;
+            font-family: "Lato", sans-serif;
+
+            &:nth-child(2) {
+              color: rgb(255, 86, 86);
+              font-size: 2.7em;
+            }
+          }
+        }
+      }
+
+      .sign-up {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        color: #3f7bf0;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+
+    .title {
+      margin-top: 20px;
+      font-size: 5em;
+      font-weight: 700;
+      font-family: "Istok Web", sans-serif;
+    }
+  }
+
+  .form {
+    height: 100%;
+    overflow: scroll;
+    // display: flex;
+    // flex-direction: column;
+
+    .signin-with-gg {
+      background: #3f7bf0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 20px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      color: #fff;
+      margin-top: 30px;
+
+      .icon {
+        font-size: 28px;
+        margin-right: 15px;
+      }
+
+      span {
+        font-size: 1.1em;
+        font-weight: 500;
+      }
+    }
+
+    label,
+    input {
+      display: inline-block;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    label {
+      color: #979797;
+      font-weight: 500;
+      // margin-top: 50px;
+    }
+
+    input {
+      border-radius: 8px;
+      box-sizing: border-box;
+      padding: 15px 20px;
+      font-size: 1em;
+      outline: none;
+      border: none;
+
+      &:focus {
+        border: 2px solid #88c6ff;
+      }
+    }
+
+    .option-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      button,
+      .button {
+        padding: 16px 60px;
+        box-sizing: border-box;
+        border-radius: 14px;
+        color: #fff;
+        // margin-top: 30px;
+        background: #333232;
+        font-size: 1.1em;
+        font-weight: 500;
+        outline: none;
+        border: none;
+      }
+
+      span {
+        color: #3f7bf0;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .off {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .login-page {
+    // justify-content: center;
+    align-items: center;
+  }
+}
